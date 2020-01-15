@@ -1,27 +1,7 @@
 # BazelWithLib
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
+In many cases, the [rules_nodejs angular example](https://github.com/bazelbuild/rules_nodejs/tree/master/examples/angular) is a good reference, but there are some things that I had to figure out on my own:
+* This project has multiple Angular libraries, with one depending on the other, and an application that depends on both libraries. The official example has a simple non-angular library.
+* This project uses a specific version of @angular/bazel for support with rules_nodejs 1.1.0 instead of the patch that is used in the Material repo and in the official example. (this should change very soon)
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Overall, I just think it's a good thing to have more examples in the wild. I hope some find it useful!

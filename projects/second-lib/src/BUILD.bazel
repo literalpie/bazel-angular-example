@@ -1,0 +1,20 @@
+package(default_visibility = ["//visibility:public"])
+
+load("@npm_angular_bazel//:index.bzl", "ng_module", "ng_package")
+load("@io_bazel_rules_sass//:defs.bzl", "multi_sass_binary", "sass_binary", "sass_library")
+
+ng_module(
+    name = "src",
+    srcs = glob(
+        ["**/*.ts"],
+        exclude = ["**/*.spec.ts", "**/_stories/**"],
+    ),
+    module_name = "@literalpie/my-first-library/second-lib",
+    deps = [
+        "@npm//@angular/core",
+        "@npm//@angular/platform-browser-dynamic",
+        "@npm//@types",
+        "@npm//rxjs",
+        "//projects/my-first-library/src",
+    ],
+)
