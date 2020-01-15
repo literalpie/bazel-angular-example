@@ -5,3 +5,6 @@ In many cases, the [rules_nodejs angular example](https://github.com/bazelbuild/
 * This project uses a specific version of @angular/bazel for support with rules_nodejs 1.1.0 instead of the patch that is used in the Material repo and in the official example. (this should change very soon)
 
 Overall, I just think it's a good thing to have more examples in the wild. I hope some find it useful!
+
+
+note: I've only tested that `npm run build` and `npm run start` work. Unit tests and e2es are most likely broken
