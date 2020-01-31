@@ -158,6 +158,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "bazel-with-lib"
+    }
+  },
+  "defaultProject": "bazel-with-lib",
+  "cli": {
+    "analytics": false
+  }
 }
